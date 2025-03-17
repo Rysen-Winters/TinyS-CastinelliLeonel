@@ -2,13 +2,19 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class LexicAnalizer {
-    File file;
-    String buffer;
+    FileReader file;
+    int readCharacter;
     String analizedString;
     int ln;
     int cl;
 
-    public LexicAnalizer(){
-
+    public LexicAnalizer(String fileLocation){
+        
     }
+
+    public FileReader getFileReader(){
+        return this.file;
+    }
+
+    
 }
